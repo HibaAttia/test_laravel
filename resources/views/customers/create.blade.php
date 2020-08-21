@@ -1,5 +1,5 @@
 
-@extends('layout')
+@extends('layouts.app')
 
 @section('title','Add New Customer')
     
@@ -23,7 +23,7 @@
 
             <button type="submit" class="btn btn-primary">Add Customer</button>
 
-            @csrf
+            
         </form>
 
         </div>
