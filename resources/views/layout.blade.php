@@ -19,7 +19,7 @@
     @include('nav')
 
     <div class="alert alert-primary" role="alert">
-    <strong>Success</strong> Thanks for your message. We'll be in touch
+    <strong>Success</strong> Thanks 
     </div>
     @yield('content')
 </div>
