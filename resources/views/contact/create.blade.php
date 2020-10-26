@@ -7,17 +7,11 @@
 
     <form action="{{ route('contact.store')}}" method="POST">
         <div class="form-group">
-                    <label for="name">Name</label>
+                    <label for="name">Nom</label>
                     <input type="text" name="name" value="{{old('name') }}" class="form-control">
                     <div>{{ $errors->first('name')}}</div>
         </div>
 
-
-        <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="text" name="email" value = "{{old('email') }}" class="form-control">
-                    <div>{{ $errors->first('email')}}</div>
-        </div>
 
         <div class="form-group">
                     <label for="message">Message</label>
@@ -26,6 +20,11 @@
         </div>
 
         @csrf
-        <button type="submit" class="btn btn-primary">Send Message</button>
+        <button type="submit" class="btn btn-primary">Envoyer un message</button>
     </form>
+
+    <div class="form-group">
+        <label for="message">Message</label>
+        <textarea name="message" id="" cols="30" rows="10" class="form-control" >{{old('message') }}</textarea>
+   
 @endsection
