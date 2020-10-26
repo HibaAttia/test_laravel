@@ -1,5 +1,5 @@
 <div class="form-group">
-                <label for="name">Name</label>
+                <label for="name">Nom</label>
                 <input type="text" name="name" value="{{old('name') ?? $customer->name}}" class="form-control">
                 <div>{{ $errors->first('name')}}</div>
             </div>
@@ -12,7 +12,7 @@
             </div>
 
             <div class="form-group">
-                <label for="active">Status</label>
+                <label for="active">Statut</label>
                 <select name="active" id="active" class="form-control">
                 <option value="" disabled>Select customer status</option>
                 <option value="1" {{ $customer->active == 'Active' ? 'selected' : ''}}>Active</option>
@@ -21,7 +21,7 @@
             </div>
 
             <div class="form-group">
-                <label for="company_id">Company</label>
+                <label for="company_id">Société</label>
                 <select name="company_id" id="company_id" class="form-control">
                     @foreach($companies as $company)
                         <option value="{{$company->id}}" {{$company->id == $customer->company_id ? 'selected' : '' }}>{{$company->name}}</option>

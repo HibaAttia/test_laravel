@@ -2,7 +2,7 @@
 @extends('layouts.app')
 
 @section('title','Add New Customer')
-    
+
 
 
 
@@ -18,18 +18,40 @@
         <form action="/customers" method="POST">
 
             @include('customers.form')
-            
 
 
-            <button type="submit" class="btn btn-primary">Add Customer</button>
 
-            
+            <button type="submit" class="btn btn-primary">Ajouter un client</button>
+
+
+        </form>
+
+        <form action="/customers" method="POST">
+
+            @include('customers.form')
+
+
+
+            <button type="submit" class="btn btn-primary">Ajouter un client</button>
+
+
+        </form>
+
+        <form action="/customers" method="POST">
+
+            @include('customers.form')
+
+
+
+            <button type="submit" class="btn btn-primary">Ajouter un client</button>
+
+
         </form>
 
         </div>
     </div>
 
-    
-    
-    
+
+
+
 @endsection
