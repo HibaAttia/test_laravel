@@ -2,7 +2,7 @@
 @extends('layouts.app')
 
 @section('title','Customer List')
-    
+
 
 
 
@@ -10,11 +10,11 @@
     <div class="row">
         <div class="col-12">
         <h1>Customers List</h1>
-        <p><a href="customers/create">Add New Customer</a></p>
+        <p><a href="customers/create">Ajouter</a></p>
         </div>
     </div>
 
-    
+
 
    @foreach($customers as $customer)
 
@@ -26,17 +26,17 @@
         {{ $customer->name}}</a>
         </div>
         <div class="col-4">
-        {{ $customer->company->name}}
+        {{ $customer->company->email}}
         </div>
         <div class="col-2">
         {{ $customer->active}}
         </div>
-        
+
     </div>
 
    @endforeach
 
 
-    
-    
+
+
 @endsection
